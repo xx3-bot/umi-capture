@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F6E8FBA2BE89BAC00DD0DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FB92BE89BAC00DD0DFA /* AppDelegate.swift */; };
+		1F6E8FBC2BE89BAC00DD0DFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FBB2BE89BAC00DD0DFA /* ContentView.swift */; };
+		1F6E8FBE2BE89BAD00DD0DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6E8FBD2BE89BAD00DD0DFA /* Assets.xcassets */; };
+		1F6E8FC12BE89BAD00DD0DFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6E8FC02BE89BAD00DD0DFA /* Preview Assets.xcassets */; };
+		D1A000000000000000000001 /* ContentViewPresentationCharacterizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000101 /* ContentViewPresentationCharacterizationTests.swift */; };
+		D1A000000000000000000002 /* TrajectoryPlot3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000102 /* TrajectoryPlot3D.swift */; };
+		D1A000000000000000000003 /* VIOAxisDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000103 /* VIOAxisDirections.swift */; };
+		D1A000000000000000000004 /* VIOAxesOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000104 /* VIOAxesOverlay.swift */; };
+		D1A000000000000000000005 /* CurrentCaptureTrajectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000105 /* CurrentCaptureTrajectoryView.swift */; };
+		D1A000000000000000000006 /* CapturePreviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000106 /* CapturePreviewViews.swift */; };
+		D1A000000000000000000007 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A000000000000000000107 /* ARViewContainer.swift */; };
+		D1B000000000000000000001 /* TrajectoryPresentationMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B000000000000000000101 /* TrajectoryPresentationMathTests.swift */; };
+		D1B000000000000000000002 /* TrajectoryPresentationMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B000000000000000000102 /* TrajectoryPresentationMath.swift */; };
+		D2B000000000000000000001 /* VIOPoseTrajectoryPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B000000000000000000101 /* VIOPoseTrajectoryPolicyTests.swift */; };
+		D2B000000000000000000002 /* VIOPoseTrajectoryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B000000000000000000102 /* VIOPoseTrajectoryPolicy.swift */; };
+		D3A000000000000000000001 /* CaptureLibraryRetentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A000000000000000000101 /* CaptureLibraryRetentionTests.swift */; };
+		D3B000000000000000000001 /* CaptureStoragePreflightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B000000000000000000101 /* CaptureStoragePreflightTests.swift */; };
+		D3B000000000000000000002 /* CaptureStoragePreflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B000000000000000000102 /* CaptureStoragePreflight.swift */; };
+		D3C000000000000000000001 /* CaptureExportIntegrityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C000000000000000000101 /* CaptureExportIntegrityTests.swift */; };
+		D3C000000000000000000002 /* CaptureArtifactIntegrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C000000000000000000102 /* CaptureArtifactIntegrity.swift */; };
+		D3D000000000000000000001 /* CaptureExportPackageRecoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D000000000000000000101 /* CaptureExportPackageRecoveryTests.swift */; };
+		D3E000000000000000000001 /* PosePacketV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E000000000000000000101 /* PosePacketV1Tests.swift */; };
+		D3E000000000000000000002 /* PosePacketV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E000000000000000000102 /* PosePacketV1.swift */; };
+		D3F000000000000000000001 /* ReceiverDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F000000000000000000101 /* ReceiverDiscoveryTests.swift */; };
+		D3F000000000000000000002 /* ReceiverEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F000000000000000000102 /* ReceiverEndpoint.swift */; };
+		D3F000000000000000000003 /* ReceiverDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F000000000000000000103 /* ReceiverDiscovery.swift */; };
+		D3G000000000000000000001 /* CaptureExportPackageIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3G000000000000000000101 /* CaptureExportPackageIndex.swift */; };
+		D4A000000000000000000001 /* ARFrameUltrawideObservationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A000000000000000000101 /* ARFrameUltrawideObservationSource.swift */; };
+		D4A000000000000000000002 /* UltrawideObservationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A000000000000000000102 /* UltrawideObservationModels.swift */; };
+		D4A000000000000000000003 /* UltrawidePoseBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A000000000000000000103 /* UltrawidePoseBinding.swift */; };
+		D4A000000000000000000004 /* UltrawideObservationSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A000000000000000000104 /* UltrawideObservationSourceTests.swift */; };
+		D4A000000000000000000005 /* UltrawidePoseBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A000000000000000000105 /* UltrawidePoseBindingTests.swift */; };
+		D4B000000000000000000001 /* UltrawideRecordingWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B000000000000000000101 /* UltrawideRecordingWriter.swift */; };
+		D4B000000000000000000002 /* UltrawideRecordingWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B000000000000000000102 /* UltrawideRecordingWriterTests.swift */; };
+		D5A000000000000000000001 /* CaptureProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000101 /* CaptureProfile.swift */; };
+		D5A000000000000000000002 /* CaptureDeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000102 /* CaptureDeviceIdentity.swift */; };
+		D5A000000000000000000003 /* CaptureCoordinationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000103 /* CaptureCoordinationModels.swift */; };
+		D5D000000000000000000001 /* CapturePackageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D000000000000000000101 /* CapturePackageUploader.swift */; };
+		D5A000000000000000000004 /* CoordinatorClockSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000104 /* CoordinatorClockSync.swift */; };
+		D5A000000000000000000005 /* CaptureCommandLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000105 /* CaptureCommandLedger.swift */; };
+		D5A000000000000000000006 /* CaptureCoordinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000106 /* CaptureCoordinationTests.swift */; };
+		D5A000000000000000000007 /* CaptureProfileMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A000000000000000000107 /* CaptureProfileMetadataTests.swift */; };
+		1F6E8FD52BE89BAD00DD0DFA /* UMICaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FD42BE89BAD00DD0DFA /* UMICaptureUITests.swift */; };
+		1F6E8FD72BE89BAD00DD0DFA /* UMICaptureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FD62BE89BAD00DD0DFA /* UMICaptureUITestsLaunchTests.swift */; };
+		D70000000000000000000001 /* DocumentationScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70000000000000000000101 /* DocumentationScreenshotTests.swift */; };
+		1F6E8FE72BE89BE400DD0DFA /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FE32BE89BE400DD0DFA /* ARAction.swift */; };
+		1F6E8FE82BE89BE400DD0DFA /* SocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FE42BE89BE400DD0DFA /* SocketClient.swift */; };
+		1F6E8FE92BE89BE400DD0DFA /* CaptureActionBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FE52BE89BE400DD0DFA /* CaptureActionBus.swift */; };
+		1F6E8FEA2BE89BE400DD0DFA /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E8FE62BE89BE400DD0DFA /* ARSessionManager.swift */; };
+		A1B2C3D40000000000000001 /* RGBRecordingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000011 /* RGBRecordingInfo.swift */; };
+		A1B2C3D40000000000000002 /* ARVideoFormatSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000012 /* ARVideoFormatSelector.swift */; };
+		A1B2C3D40000000000000003 /* RGBVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000013 /* RGBVideoRecorder.swift */; };
+		A1B2C3D40000000000000004 /* CaptureLibraryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000014 /* CaptureLibraryModels.swift */; };
+		A1B2C3D40000000000000005 /* TrajectoryArchiveWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000015 /* TrajectoryArchiveWriter.swift */; };
+		A1B2C3D40000000000000006 /* CaptureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000016 /* CaptureLibrary.swift */; };
+		A1B2C3D40000000000000007 /* RecentCapturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000017 /* RecentCapturesView.swift */; };
+		A1B2C3D40000000000000008 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000018 /* AppLanguage.swift */; };
+		A1B2C3D40000000000000009 /* CaptureDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000019 /* CaptureDrawerView.swift */; };
+		A1B2C3D4000000000000000A /* TrackingReadinessEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001A /* TrackingReadinessEvaluator.swift */; };
+		A1B2C3D4000000000000000B /* LocalStartCueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001B /* LocalStartCueController.swift */; };
+		A1B2C3D4000000000000000C /* TrajectoryPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001C /* TrajectoryPlaybackControls.swift */; };
+		A1B2C3D4000000000000000D /* RGBCameraMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001D /* RGBCameraMode.swift */; };
+		A1B2C3D4000000000000000E /* CameraCalibrationProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001E /* CameraCalibrationProfile.swift */; };
+		A1B2C3D4000000000000000F /* RGBFrameMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4000000000000001F /* RGBFrameMetadata.swift */; };
+		A1B2C3D40000000000000010 /* CaptureExportPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000020 /* CaptureExportPackage.swift */; };
+		D6A000000000000000000001 /* SoftwareProvenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A000000000000000000101 /* SoftwareProvenance.swift */; };
+		D6A000000000000000000002 /* LaunchGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A000000000000000000102 /* LaunchGateView.swift */; };
+		D6A000000000000000000003 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = D6A000000000000000000103 /* NOTICE */; };
+		F20000000000000000000001 /* CapturePerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000101 /* CapturePerformanceMonitor.swift */; };
+		F20000000000000000000002 /* CapturePerformanceMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000102 /* CapturePerformanceMonitorTests.swift */; };
+		F20100000000000000000001 /* RGBFrameAdmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20100000000000000000101 /* RGBFrameAdmission.swift */; };
+		F20100000000000000000002 /* RGBFrameAdmissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20100000000000000000102 /* RGBFrameAdmissionTests.swift */; };
+		F20200000000000000000001 /* CaptureFinalizationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20200000000000000000101 /* CaptureFinalizationPolicy.swift */; };
+		F20200000000000000000002 /* CaptureFinalizationPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20200000000000000000102 /* CaptureFinalizationPolicyTests.swift */; };
+		C60F156BCCAB30F337E416B0 /* Pods_UMICaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD9B0D87942E8D561A1779 /* Pods_UMICaptureTests.framework */; };
+		CD4B63BF511C1AEA5309CA7A /* Pods_UMICapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023A5510CA7D9CA21F72D86 /* Pods_UMICapture.framework */; };
+		E02FDF37472DB0A2C1B8AAA4 /* Pods_UMICapture_UMICaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648FEE11F75FCDFE352BFC75 /* Pods_UMICapture_UMICaptureUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F6E8FC72BE89BAD00DD0DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6E8FAE2BE89BAC00DD0DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6E8FB52BE89BAC00DD0DFA;
+			remoteInfo = UMICapture;
+		};
+		1F6E8FD12BE89BAD00DD0DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6E8FAE2BE89BAC00DD0DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6E8FB52BE89BAC00DD0DFA;
+			remoteInfo = UMICapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B55B870EF93DCA787507C9 /* Pods-UMICapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICapture.release.xcconfig"; path = "Target Support Files/Pods-UMICapture/Pods-UMICapture.release.xcconfig"; sourceTree = "<group>"; };
+		077A43EE8EA28E02DB4967D3 /* Pods-UMICapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICapture.debug.xcconfig"; path = "Target Support Files/Pods-UMICapture/Pods-UMICapture.debug.xcconfig"; sourceTree = "<group>"; };
+		10A4BB74B67D385063550573 /* Pods-UMICaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICaptureTests.debug.xcconfig"; path = "Target Support Files/Pods-UMICaptureTests/Pods-UMICaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F6E8FB62BE89BAC00DD0DFA /* UMICapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMICapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E8FB92BE89BAC00DD0DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F6E8FBB2BE89BAC00DD0DFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F6E8FBD2BE89BAD00DD0DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F6E8FC02BE89BAD00DD0DFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F6E8FC62BE89BAD00DD0DFA /* UMICaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMICaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A000000000000000000101 /* ContentViewPresentationCharacterizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewPresentationCharacterizationTests.swift; sourceTree = "<group>"; };
+		D1A000000000000000000102 /* TrajectoryPlot3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectoryPlot3D.swift; sourceTree = "<group>"; };
+		D1A000000000000000000103 /* VIOAxisDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIOAxisDirections.swift; sourceTree = "<group>"; };
+		D1A000000000000000000104 /* VIOAxesOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIOAxesOverlay.swift; sourceTree = "<group>"; };
+		D1A000000000000000000105 /* CurrentCaptureTrajectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCaptureTrajectoryView.swift; sourceTree = "<group>"; };
+		D1A000000000000000000106 /* CapturePreviewViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreviewViews.swift; sourceTree = "<group>"; };
+		D1A000000000000000000107 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		D1B000000000000000000101 /* TrajectoryPresentationMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectoryPresentationMathTests.swift; sourceTree = "<group>"; };
+		D1B000000000000000000102 /* TrajectoryPresentationMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectoryPresentationMath.swift; sourceTree = "<group>"; };
+		D2B000000000000000000101 /* VIOPoseTrajectoryPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIOPoseTrajectoryPolicyTests.swift; sourceTree = "<group>"; };
+		D2B000000000000000000102 /* VIOPoseTrajectoryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIOPoseTrajectoryPolicy.swift; sourceTree = "<group>"; };
+		D3A000000000000000000101 /* CaptureLibraryRetentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureLibraryRetentionTests.swift; sourceTree = "<group>"; };
+		D3B000000000000000000101 /* CaptureStoragePreflightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureStoragePreflightTests.swift; sourceTree = "<group>"; };
+		D3B000000000000000000102 /* CaptureStoragePreflight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureStoragePreflight.swift; sourceTree = "<group>"; };
+		D3C000000000000000000101 /* CaptureExportIntegrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureExportIntegrityTests.swift; sourceTree = "<group>"; };
+		D3C000000000000000000102 /* CaptureArtifactIntegrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureArtifactIntegrity.swift; sourceTree = "<group>"; };
+		D3D000000000000000000101 /* CaptureExportPackageRecoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureExportPackageRecoveryTests.swift; sourceTree = "<group>"; };
+		D3E000000000000000000101 /* PosePacketV1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosePacketV1Tests.swift; sourceTree = "<group>"; };
+		D3E000000000000000000102 /* PosePacketV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosePacketV1.swift; sourceTree = "<group>"; };
+		D3F000000000000000000101 /* ReceiverDiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverDiscoveryTests.swift; sourceTree = "<group>"; };
+		D3F000000000000000000102 /* ReceiverEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverEndpoint.swift; sourceTree = "<group>"; };
+		D3F000000000000000000103 /* ReceiverDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverDiscovery.swift; sourceTree = "<group>"; };
+		D3G000000000000000000101 /* CaptureExportPackageIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureExportPackageIndex.swift; sourceTree = "<group>"; };
+		D4A000000000000000000101 /* ARFrameUltrawideObservationSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFrameUltrawideObservationSource.swift; sourceTree = "<group>"; };
+		D4A000000000000000000102 /* UltrawideObservationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawideObservationModels.swift; sourceTree = "<group>"; };
+		D4A000000000000000000103 /* UltrawidePoseBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawidePoseBinding.swift; sourceTree = "<group>"; };
+		D4A000000000000000000104 /* UltrawideObservationSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawideObservationSourceTests.swift; sourceTree = "<group>"; };
+		D4A000000000000000000105 /* UltrawidePoseBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawidePoseBindingTests.swift; sourceTree = "<group>"; };
+		D4B000000000000000000101 /* UltrawideRecordingWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawideRecordingWriter.swift; sourceTree = "<group>"; };
+		D4B000000000000000000102 /* UltrawideRecordingWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltrawideRecordingWriterTests.swift; sourceTree = "<group>"; };
+		D5A000000000000000000101 /* CaptureProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureProfile.swift; sourceTree = "<group>"; };
+		D5A000000000000000000102 /* CaptureDeviceIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDeviceIdentity.swift; sourceTree = "<group>"; };
+		D5A000000000000000000103 /* CaptureCoordinationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCoordinationModels.swift; sourceTree = "<group>"; };
+		D5D000000000000000000101 /* CapturePackageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePackageUploader.swift; sourceTree = "<group>"; };
+		D5A000000000000000000104 /* CoordinatorClockSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorClockSync.swift; sourceTree = "<group>"; };
+		D5A000000000000000000105 /* CaptureCommandLedger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCommandLedger.swift; sourceTree = "<group>"; };
+		D5A000000000000000000106 /* CaptureCoordinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCoordinationTests.swift; sourceTree = "<group>"; };
+		D5A000000000000000000107 /* CaptureProfileMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureProfileMetadataTests.swift; sourceTree = "<group>"; };
+		1F6E8FD02BE89BAD00DD0DFA /* UMICaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMICaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E8FD42BE89BAD00DD0DFA /* UMICaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMICaptureUITests.swift; sourceTree = "<group>"; };
+		1F6E8FD62BE89BAD00DD0DFA /* UMICaptureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMICaptureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D70000000000000000000101 /* DocumentationScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationScreenshotTests.swift; sourceTree = "<group>"; };
+		1F6E8FE32BE89BE400DD0DFA /* ARAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		1F6E8FE42BE89BE400DD0DFA /* SocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClient.swift; sourceTree = "<group>"; };
+		1F6E8FE52BE89BE400DD0DFA /* CaptureActionBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureActionBus.swift; sourceTree = "<group>"; };
+		1F6E8FE62BE89BE400DD0DFA /* ARSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000011 /* RGBRecordingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBRecordingInfo.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000012 /* ARVideoFormatSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoFormatSelector.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000013 /* RGBVideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBVideoRecorder.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000014 /* CaptureLibraryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureLibraryModels.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000015 /* TrajectoryArchiveWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectoryArchiveWriter.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000016 /* CaptureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureLibrary.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000017 /* RecentCapturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCapturesView.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000018 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000019 /* CaptureDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDrawerView.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001A /* TrackingReadinessEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingReadinessEvaluator.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001B /* LocalStartCueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStartCueController.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001C /* TrajectoryPlaybackControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectoryPlaybackControls.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001D /* RGBCameraMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBCameraMode.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001E /* CameraCalibrationProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCalibrationProfile.swift; sourceTree = "<group>"; };
+		A1B2C3D4000000000000001F /* RGBFrameMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBFrameMetadata.swift; sourceTree = "<group>"; };
+		A1B2C3D40000000000000020 /* CaptureExportPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureExportPackage.swift; sourceTree = "<group>"; };
+		D6A000000000000000000101 /* SoftwareProvenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareProvenance.swift; sourceTree = "<group>"; };
+		D6A000000000000000000102 /* LaunchGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchGateView.swift; sourceTree = "<group>"; };
+		D6A000000000000000000103 /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		F20000000000000000000101 /* CapturePerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePerformanceMonitor.swift; sourceTree = "<group>"; };
+		F20000000000000000000102 /* CapturePerformanceMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePerformanceMonitorTests.swift; sourceTree = "<group>"; };
+		F20100000000000000000101 /* RGBFrameAdmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBFrameAdmission.swift; sourceTree = "<group>"; };
+		F20100000000000000000102 /* RGBFrameAdmissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBFrameAdmissionTests.swift; sourceTree = "<group>"; };
+		F20200000000000000000101 /* CaptureFinalizationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFinalizationPolicy.swift; sourceTree = "<group>"; };
+		F20200000000000000000102 /* CaptureFinalizationPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFinalizationPolicyTests.swift; sourceTree = "<group>"; };
+		B7A11DA40000000000000017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648FEE11F75FCDFE352BFC75 /* Pods_UMICapture_UMICaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMICapture_UMICaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F26058A35793C601D624AF /* Pods-UMICaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICaptureTests.release.xcconfig"; path = "Target Support Files/Pods-UMICaptureTests/Pods-UMICaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6579A51E02AD9F16DCD0913 /* Pods-UMICapture-UMICaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICapture-UMICaptureUITests.release.xcconfig"; path = "Target Support Files/Pods-UMICapture-UMICaptureUITests/Pods-UMICapture-UMICaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE3FBEE8296BDA811BF1F5D3 /* Pods-UMICapture-UMICaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMICapture-UMICaptureUITests.debug.xcconfig"; path = "Target Support Files/Pods-UMICapture-UMICaptureUITests/Pods-UMICapture-UMICaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E023A5510CA7D9CA21F72D86 /* Pods_UMICapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMICapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBD9B0D87942E8D561A1779 /* Pods_UMICaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMICaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6E8FB32BE89BAC00DD0DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4B63BF511C1AEA5309CA7A /* Pods_UMICapture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FC32BE89BAD00DD0DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60F156BCCAB30F337E416B0 /* Pods_UMICaptureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FCD2BE89BAD00DD0DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02FDF37472DB0A2C1B8AAA4 /* Pods_UMICapture_UMICaptureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6E8FAD2BE89BAC00DD0DFA = {
+			isa = PBXGroup;
+			children = (
+				D6A000000000000000000103 /* NOTICE */,
+				1F6E8FB82BE89BAC00DD0DFA /* UMICapture */,
+				1F6E8FC92BE89BAD00DD0DFA /* UMICaptureTests */,
+				1F6E8FD32BE89BAD00DD0DFA /* UMICaptureUITests */,
+				1F6E8FB72BE89BAC00DD0DFA /* Products */,
+				72CEBDE9B5731AC8B04BBD99 /* Pods */,
+				DE7C46DB7F3A8ECA910DC4D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F6E8FB72BE89BAC00DD0DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E8FB62BE89BAC00DD0DFA /* UMICapture.app */,
+				1F6E8FC62BE89BAD00DD0DFA /* UMICaptureTests.xctest */,
+				1F6E8FD02BE89BAD00DD0DFA /* UMICaptureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6E8FB82BE89BAC00DD0DFA /* UMICapture */ = {
+			isa = PBXGroup;
+			children = (
+				F20000000000000000000101 /* CapturePerformanceMonitor.swift */,
+				F20100000000000000000101 /* RGBFrameAdmission.swift */,
+				F20200000000000000000101 /* CaptureFinalizationPolicy.swift */,
+				1F6E8FB92BE89BAC00DD0DFA /* AppDelegate.swift */,
+				D6A000000000000000000102 /* LaunchGateView.swift */,
+				D6A000000000000000000101 /* SoftwareProvenance.swift */,
+				1F6E8FBB2BE89BAC00DD0DFA /* ContentView.swift */,
+				D1A000000000000000000102 /* TrajectoryPlot3D.swift */,
+				D1B000000000000000000102 /* TrajectoryPresentationMath.swift */,
+				D1A000000000000000000103 /* VIOAxisDirections.swift */,
+				D1A000000000000000000104 /* VIOAxesOverlay.swift */,
+				D1A000000000000000000105 /* CurrentCaptureTrajectoryView.swift */,
+				D1A000000000000000000106 /* CapturePreviewViews.swift */,
+				D1A000000000000000000107 /* ARViewContainer.swift */,
+				1F6E8FE32BE89BE400DD0DFA /* ARAction.swift */,
+				1F6E8FE52BE89BE400DD0DFA /* CaptureActionBus.swift */,
+				1F6E8FE62BE89BE400DD0DFA /* ARSessionManager.swift */,
+				D2B000000000000000000102 /* VIOPoseTrajectoryPolicy.swift */,
+				D3B000000000000000000102 /* CaptureStoragePreflight.swift */,
+				D3C000000000000000000102 /* CaptureArtifactIntegrity.swift */,
+				D3E000000000000000000102 /* PosePacketV1.swift */,
+				D3F000000000000000000102 /* ReceiverEndpoint.swift */,
+				D3F000000000000000000103 /* ReceiverDiscovery.swift */,
+				D3G000000000000000000101 /* CaptureExportPackageIndex.swift */,
+				D4A000000000000000000101 /* ARFrameUltrawideObservationSource.swift */,
+				D4A000000000000000000102 /* UltrawideObservationModels.swift */,
+				D4A000000000000000000103 /* UltrawidePoseBinding.swift */,
+				D4B000000000000000000101 /* UltrawideRecordingWriter.swift */,
+				D5A000000000000000000101 /* CaptureProfile.swift */,
+				D5A000000000000000000102 /* CaptureDeviceIdentity.swift */,
+				D5A000000000000000000103 /* CaptureCoordinationModels.swift */,
+				D5D000000000000000000101 /* CapturePackageUploader.swift */,
+				D5A000000000000000000104 /* CoordinatorClockSync.swift */,
+				D5A000000000000000000105 /* CaptureCommandLedger.swift */,
+				1F6E8FE42BE89BE400DD0DFA /* SocketClient.swift */,
+				A1B2C3D40000000000000011 /* RGBRecordingInfo.swift */,
+				A1B2C3D40000000000000012 /* ARVideoFormatSelector.swift */,
+				A1B2C3D40000000000000013 /* RGBVideoRecorder.swift */,
+				A1B2C3D40000000000000014 /* CaptureLibraryModels.swift */,
+				A1B2C3D40000000000000015 /* TrajectoryArchiveWriter.swift */,
+				A1B2C3D40000000000000016 /* CaptureLibrary.swift */,
+				A1B2C3D40000000000000017 /* RecentCapturesView.swift */,
+				A1B2C3D40000000000000018 /* AppLanguage.swift */,
+				A1B2C3D40000000000000019 /* CaptureDrawerView.swift */,
+				A1B2C3D4000000000000001A /* TrackingReadinessEvaluator.swift */,
+				A1B2C3D4000000000000001B /* LocalStartCueController.swift */,
+				A1B2C3D4000000000000001C /* TrajectoryPlaybackControls.swift */,
+				A1B2C3D4000000000000001D /* RGBCameraMode.swift */,
+				A1B2C3D4000000000000001E /* CameraCalibrationProfile.swift */,
+				A1B2C3D4000000000000001F /* RGBFrameMetadata.swift */,
+				A1B2C3D40000000000000020 /* CaptureExportPackage.swift */,
+				B7A11DA40000000000000017 /* Info.plist */,
+				1F6E8FBD2BE89BAD00DD0DFA /* Assets.xcassets */,
+				1F6E8FBF2BE89BAD00DD0DFA /* Preview Content */,
+			);
+			path = UMICapture;
+			sourceTree = "<group>";
+		};
+		1F6E8FBF2BE89BAD00DD0DFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E8FC02BE89BAD00DD0DFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F6E8FC92BE89BAD00DD0DFA /* UMICaptureTests */ = {
+			isa = PBXGroup;
+			children = (
+				F20000000000000000000102 /* CapturePerformanceMonitorTests.swift */,
+				F20100000000000000000102 /* RGBFrameAdmissionTests.swift */,
+				F20200000000000000000102 /* CaptureFinalizationPolicyTests.swift */,
+				D1A000000000000000000101 /* ContentViewPresentationCharacterizationTests.swift */,
+				D1B000000000000000000101 /* TrajectoryPresentationMathTests.swift */,
+				D2B000000000000000000101 /* VIOPoseTrajectoryPolicyTests.swift */,
+				D3A000000000000000000101 /* CaptureLibraryRetentionTests.swift */,
+				D3B000000000000000000101 /* CaptureStoragePreflightTests.swift */,
+				D3C000000000000000000101 /* CaptureExportIntegrityTests.swift */,
+				D3D000000000000000000101 /* CaptureExportPackageRecoveryTests.swift */,
+				D3E000000000000000000101 /* PosePacketV1Tests.swift */,
+				D3F000000000000000000101 /* ReceiverDiscoveryTests.swift */,
+				D4A000000000000000000104 /* UltrawideObservationSourceTests.swift */,
+				D4A000000000000000000105 /* UltrawidePoseBindingTests.swift */,
+				D4B000000000000000000102 /* UltrawideRecordingWriterTests.swift */,
+				D5A000000000000000000106 /* CaptureCoordinationTests.swift */,
+				D5A000000000000000000107 /* CaptureProfileMetadataTests.swift */,
+			);
+			path = UMICaptureTests;
+			sourceTree = "<group>";
+		};
+		1F6E8FD32BE89BAD00DD0DFA /* UMICaptureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D70000000000000000000101 /* DocumentationScreenshotTests.swift */,
+				1F6E8FD42BE89BAD00DD0DFA /* UMICaptureUITests.swift */,
+				1F6E8FD62BE89BAD00DD0DFA /* UMICaptureUITestsLaunchTests.swift */,
+			);
+			path = UMICaptureUITests;
+			sourceTree = "<group>";
+		};
+		72CEBDE9B5731AC8B04BBD99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				077A43EE8EA28E02DB4967D3 /* Pods-UMICapture.debug.xcconfig */,
+				04B55B870EF93DCA787507C9 /* Pods-UMICapture.release.xcconfig */,
+				BE3FBEE8296BDA811BF1F5D3 /* Pods-UMICapture-UMICaptureUITests.debug.xcconfig */,
+				A6579A51E02AD9F16DCD0913 /* Pods-UMICapture-UMICaptureUITests.release.xcconfig */,
+				10A4BB74B67D385063550573 /* Pods-UMICaptureTests.debug.xcconfig */,
+				A3F26058A35793C601D624AF /* Pods-UMICaptureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE7C46DB7F3A8ECA910DC4D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E023A5510CA7D9CA21F72D86 /* Pods_UMICapture.framework */,
+				648FEE11F75FCDFE352BFC75 /* Pods_UMICapture_UMICaptureUITests.framework */,
+				FCBD9B0D87942E8D561A1779 /* Pods_UMICaptureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F6E8FB52BE89BAC00DD0DFA /* UMICapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E8FDA2BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICapture" */;
+			buildPhases = (
+				9DE8787ADC349230FAC1ECF6 /* [CP] Check Pods Manifest.lock */,
+				1F6E8FB22BE89BAC00DD0DFA /* Sources */,
+				1F6E8FB32BE89BAC00DD0DFA /* Frameworks */,
+				1F6E8FB42BE89BAC00DD0DFA /* Resources */,
+				BDE3280C9F1DB5A2269678EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UMICapture;
+			productName = UMICapture;
+			productReference = 1F6E8FB62BE89BAC00DD0DFA /* UMICapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F6E8FC52BE89BAD00DD0DFA /* UMICaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E8FDD2BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICaptureTests" */;
+			buildPhases = (
+				2A324B45A0AED97CAF9447FF /* [CP] Check Pods Manifest.lock */,
+				1F6E8FC22BE89BAD00DD0DFA /* Sources */,
+				1F6E8FC32BE89BAD00DD0DFA /* Frameworks */,
+				1F6E8FC42BE89BAD00DD0DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6E8FC82BE89BAD00DD0DFA /* PBXTargetDependency */,
+			);
+			name = UMICaptureTests;
+			productName = UMICaptureTests;
+			productReference = 1F6E8FC62BE89BAD00DD0DFA /* UMICaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F6E8FCF2BE89BAD00DD0DFA /* UMICaptureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E8FE02BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICaptureUITests" */;
+			buildPhases = (
+				33C5D6AE4B5BAC970A2F72CF /* [CP] Check Pods Manifest.lock */,
+				1F6E8FCC2BE89BAD00DD0DFA /* Sources */,
+				1F6E8FCD2BE89BAD00DD0DFA /* Frameworks */,
+				1F6E8FCE2BE89BAD00DD0DFA /* Resources */,
+				11BE57F1DB7092046C91E826 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6E8FD22BE89BAD00DD0DFA /* PBXTargetDependency */,
+			);
+			name = UMICaptureUITests;
+			productName = UMICaptureUITests;
+			productReference = 1F6E8FD02BE89BAD00DD0DFA /* UMICaptureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F6E8FAE2BE89BAC00DD0DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1F6E8FB52BE89BAC00DD0DFA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1F6E8FC52BE89BAD00DD0DFA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1F6E8FB52BE89BAC00DD0DFA;
+					};
+					1F6E8FCF2BE89BAD00DD0DFA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1F6E8FB52BE89BAC00DD0DFA;
+					};
+				};
+			};
+			buildConfigurationList = 1F6E8FB12BE89BAC00DD0DFA /* Build configuration list for PBXProject "UMICapture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F6E8FAD2BE89BAC00DD0DFA;
+			productRefGroup = 1F6E8FB72BE89BAC00DD0DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F6E8FB52BE89BAC00DD0DFA /* UMICapture */,
+				1F6E8FC52BE89BAD00DD0DFA /* UMICaptureTests */,
+				1F6E8FCF2BE89BAD00DD0DFA /* UMICaptureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F6E8FB42BE89BAC00DD0DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A000000000000000000003 /* NOTICE in Resources */,
+				1F6E8FC12BE89BAD00DD0DFA /* Preview Assets.xcassets in Resources */,
+				1F6E8FBE2BE89BAD00DD0DFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FC42BE89BAD00DD0DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FCE2BE89BAD00DD0DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11BE57F1DB7092046C91E826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMICapture-UMICaptureUITests/Pods-UMICapture-UMICaptureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMICapture-UMICaptureUITests/Pods-UMICapture-UMICaptureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMICapture-UMICaptureUITests/Pods-UMICapture-UMICaptureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A324B45A0AED97CAF9447FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMICaptureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C5D6AE4B5BAC970A2F72CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMICapture-UMICaptureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE8787ADC349230FAC1ECF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMICapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE3280C9F1DB5A2269678EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMICapture/Pods-UMICapture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMICapture/Pods-UMICapture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMICapture/Pods-UMICapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F6E8FB22BE89BAC00DD0DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20000000000000000000001 /* CapturePerformanceMonitor.swift in Sources */,
+				F20100000000000000000001 /* RGBFrameAdmission.swift in Sources */,
+				F20200000000000000000001 /* CaptureFinalizationPolicy.swift in Sources */,
+				D6A000000000000000000002 /* LaunchGateView.swift in Sources */,
+				D6A000000000000000000001 /* SoftwareProvenance.swift in Sources */,
+				1F6E8FBC2BE89BAC00DD0DFA /* ContentView.swift in Sources */,
+				D1A000000000000000000002 /* TrajectoryPlot3D.swift in Sources */,
+				D1B000000000000000000002 /* TrajectoryPresentationMath.swift in Sources */,
+				D1A000000000000000000003 /* VIOAxisDirections.swift in Sources */,
+				D1A000000000000000000004 /* VIOAxesOverlay.swift in Sources */,
+				D1A000000000000000000005 /* CurrentCaptureTrajectoryView.swift in Sources */,
+				D1A000000000000000000006 /* CapturePreviewViews.swift in Sources */,
+				D1A000000000000000000007 /* ARViewContainer.swift in Sources */,
+				1F6E8FE82BE89BE400DD0DFA /* SocketClient.swift in Sources */,
+				1F6E8FBA2BE89BAC00DD0DFA /* AppDelegate.swift in Sources */,
+				1F6E8FE72BE89BE400DD0DFA /* ARAction.swift in Sources */,
+				1F6E8FE92BE89BE400DD0DFA /* CaptureActionBus.swift in Sources */,
+				1F6E8FEA2BE89BE400DD0DFA /* ARSessionManager.swift in Sources */,
+				D2B000000000000000000002 /* VIOPoseTrajectoryPolicy.swift in Sources */,
+				D3B000000000000000000002 /* CaptureStoragePreflight.swift in Sources */,
+				D3C000000000000000000002 /* CaptureArtifactIntegrity.swift in Sources */,
+				D3E000000000000000000002 /* PosePacketV1.swift in Sources */,
+				D3F000000000000000000002 /* ReceiverEndpoint.swift in Sources */,
+				D3F000000000000000000003 /* ReceiverDiscovery.swift in Sources */,
+				D3G000000000000000000001 /* CaptureExportPackageIndex.swift in Sources */,
+				D4A000000000000000000001 /* ARFrameUltrawideObservationSource.swift in Sources */,
+				D4A000000000000000000002 /* UltrawideObservationModels.swift in Sources */,
+				D4A000000000000000000003 /* UltrawidePoseBinding.swift in Sources */,
+				D4B000000000000000000001 /* UltrawideRecordingWriter.swift in Sources */,
+				D5A000000000000000000001 /* CaptureProfile.swift in Sources */,
+				D5A000000000000000000002 /* CaptureDeviceIdentity.swift in Sources */,
+				D5A000000000000000000003 /* CaptureCoordinationModels.swift in Sources */,
+				D5D000000000000000000001 /* CapturePackageUploader.swift in Sources */,
+				D5A000000000000000000004 /* CoordinatorClockSync.swift in Sources */,
+				D5A000000000000000000005 /* CaptureCommandLedger.swift in Sources */,
+				A1B2C3D40000000000000001 /* RGBRecordingInfo.swift in Sources */,
+				A1B2C3D40000000000000002 /* ARVideoFormatSelector.swift in Sources */,
+				A1B2C3D40000000000000003 /* RGBVideoRecorder.swift in Sources */,
+				A1B2C3D40000000000000004 /* CaptureLibraryModels.swift in Sources */,
+				A1B2C3D40000000000000005 /* TrajectoryArchiveWriter.swift in Sources */,
+				A1B2C3D40000000000000006 /* CaptureLibrary.swift in Sources */,
+				A1B2C3D40000000000000007 /* RecentCapturesView.swift in Sources */,
+				A1B2C3D40000000000000008 /* AppLanguage.swift in Sources */,
+				A1B2C3D40000000000000009 /* CaptureDrawerView.swift in Sources */,
+				A1B2C3D4000000000000000A /* TrackingReadinessEvaluator.swift in Sources */,
+				A1B2C3D4000000000000000B /* LocalStartCueController.swift in Sources */,
+				A1B2C3D4000000000000000C /* TrajectoryPlaybackControls.swift in Sources */,
+				A1B2C3D4000000000000000D /* RGBCameraMode.swift in Sources */,
+				A1B2C3D4000000000000000E /* CameraCalibrationProfile.swift in Sources */,
+				A1B2C3D4000000000000000F /* RGBFrameMetadata.swift in Sources */,
+				A1B2C3D40000000000000010 /* CaptureExportPackage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FC22BE89BAD00DD0DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20000000000000000000002 /* CapturePerformanceMonitorTests.swift in Sources */,
+				F20100000000000000000002 /* RGBFrameAdmissionTests.swift in Sources */,
+				F20200000000000000000002 /* CaptureFinalizationPolicyTests.swift in Sources */,
+				D1A000000000000000000001 /* ContentViewPresentationCharacterizationTests.swift in Sources */,
+				D1B000000000000000000001 /* TrajectoryPresentationMathTests.swift in Sources */,
+				D2B000000000000000000001 /* VIOPoseTrajectoryPolicyTests.swift in Sources */,
+				D3A000000000000000000001 /* CaptureLibraryRetentionTests.swift in Sources */,
+				D3B000000000000000000001 /* CaptureStoragePreflightTests.swift in Sources */,
+				D3C000000000000000000001 /* CaptureExportIntegrityTests.swift in Sources */,
+				D3D000000000000000000001 /* CaptureExportPackageRecoveryTests.swift in Sources */,
+				D3E000000000000000000001 /* PosePacketV1Tests.swift in Sources */,
+				D3F000000000000000000001 /* ReceiverDiscoveryTests.swift in Sources */,
+				D4A000000000000000000004 /* UltrawideObservationSourceTests.swift in Sources */,
+				D4A000000000000000000005 /* UltrawidePoseBindingTests.swift in Sources */,
+				D4B000000000000000000002 /* UltrawideRecordingWriterTests.swift in Sources */,
+				D5A000000000000000000006 /* CaptureCoordinationTests.swift in Sources */,
+				D5A000000000000000000007 /* CaptureProfileMetadataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E8FCC2BE89BAD00DD0DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70000000000000000000001 /* DocumentationScreenshotTests.swift in Sources */,
+				1F6E8FD72BE89BAD00DD0DFA /* UMICaptureUITestsLaunchTests.swift in Sources */,
+				1F6E8FD52BE89BAD00DD0DFA /* UMICaptureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F6E8FC82BE89BAD00DD0DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6E8FB52BE89BAC00DD0DFA /* UMICapture */;
+			targetProxy = 1F6E8FC72BE89BAD00DD0DFA /* PBXContainerItemProxy */;
+		};
+		1F6E8FD22BE89BAD00DD0DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6E8FB52BE89BAC00DD0DFA /* UMICapture */;
+			targetProxy = 1F6E8FD12BE89BAD00DD0DFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F6E8FD82BE89BAD00DD0DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F6E8FD92BE89BAD00DD0DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F6E8FDB2BE89BAD00DD0DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077A43EE8EA28E02DB4967D3 /* Pods-UMICapture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UMICapture/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UMICapture/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera for visual inertial odometry";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F6E8FDC2BE89BAD00DD0DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B55B870EF93DCA787507C9 /* Pods-UMICapture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UMICapture/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UMICapture/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera for visual inertial odometry";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F6E8FDE2BE89BAD00DD0DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A4BB74B67D385063550573 /* Pods-UMICaptureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UMICapture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UMICapture";
+			};
+			name = Debug;
+		};
+		1F6E8FDF2BE89BAD00DD0DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F26058A35793C601D624AF /* Pods-UMICaptureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UMICapture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UMICapture";
+			};
+			name = Release;
+		};
+		1F6E8FE12BE89BAD00DD0DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3FBEE8296BDA811BF1F5D3 /* Pods-UMICapture-UMICaptureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UMICapture;
+			};
+			name = Debug;
+		};
+		1F6E8FE22BE89BAD00DD0DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6579A51E02AD9F16DCD0913 /* Pods-UMICapture-UMICaptureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UMICaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UMICapture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F6E8FB12BE89BAC00DD0DFA /* Build configuration list for PBXProject "UMICapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E8FD82BE89BAD00DD0DFA /* Debug */,
+				1F6E8FD92BE89BAD00DD0DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6E8FDA2BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E8FDB2BE89BAD00DD0DFA /* Debug */,
+				1F6E8FDC2BE89BAD00DD0DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6E8FDD2BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E8FDE2BE89BAD00DD0DFA /* Debug */,
+				1F6E8FDF2BE89BAD00DD0DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6E8FE02BE89BAD00DD0DFA /* Build configuration list for PBXNativeTarget "UMICaptureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E8FE12BE89BAD00DD0DFA /* Debug */,
+				1F6E8FE22BE89BAD00DD0DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F6E8FAE2BE89BAC00DD0DFA /* Project object */;
+}

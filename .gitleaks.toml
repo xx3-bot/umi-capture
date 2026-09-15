@@ -1,0 +1,8 @@
+title = "UMI Capture public source credential gate"
+
+[extend]
+useDefault = true
+
+# No path or token allowlists. Synthetic privacy fixtures are intentionally not
+# credentials; the private-key header is split in the test source. Both gate
+# files remain subject to all default gitleaks rules.

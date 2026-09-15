@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UMI Capture Receiver</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { max-width: 920px; margin: 32px auto; padding: 0 20px; }
+    header { display: flex; align-items: baseline; justify-content: space-between; }
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .card { border: 1px solid color-mix(in srgb, currentColor 20%, transparent); border-radius: 12px; padding: 14px; }
+    .muted { opacity: .65; } pre { white-space: pre-wrap; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header><h1>UMI Capture Receiver</h1><span id="health">Loading…</span></header>
+  <p class="muted">Trusted laboratory LAN · protocol v1 · two independent device-local ARKit frames.</p>
+  <div class="cards"><section class="card"><h2>Handheld UMI</h2><div id="hand">Offline</div></section><section class="card"><h2>Chest EGO</h2><div id="ego">Offline</div></section></div>
+  <h2>Session</h2><pre id="session">No active session.</pre>
+  <script>
+    async function refresh() {
+      try {
+        const state = await (await fetch('/api/state', {cache:'no-store'})).json();
+        health.textContent = 'Online';
+        const devices = state.dual_capture?.devices || [];
+        const show = (role, id) => {
+          const d = devices.find(x => x.capture_role === role);
+          document.getElementById(id).textContent = d ? `${d.display_name} · ${d.client_identity} · ${d.last_ack_state || 'connected'}` : 'Offline';
+        };
+        show('wrist_umi', 'hand'); show('ego', 'ego');
+        session.textContent = state.dual_capture?.session ? JSON.stringify(state.dual_capture.session, null, 2) : 'No active session.';
+      } catch (_) { health.textContent = 'Unavailable'; }
+    }
+    refresh(); setInterval(refresh, 1000);
+  </script>
+</body>
+</html>

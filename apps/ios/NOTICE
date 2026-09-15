@@ -1,0 +1,10 @@
+UMICapture experimental source release
+
+UMICapture is an independently implemented ARKit-based capture and processing
+tool developed by Xinrui Xiong. It is inspired by prior open-source work in the
+Universal Manipulation Interface, UMI on Legs, iPhUMI, and iPhoneVIO ecosystems.
+This acknowledgement describes technical inspiration and compatibility; it
+does not imply code derivation, endorsement, or a license grant.
+
+Third-party components retain their own copyright and license terms. See the
+repository third-party inventory before redistribution.

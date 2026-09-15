@@ -1,0 +1,16 @@
+# UMI Capture notice
+
+UMI Capture is independently implemented project software by Xinrui Xiong. It uses
+Apple ARKit and related Apple developer frameworks and is inspired by the
+Universal Manipulation Interface (UMI), UMI on Legs, iPhUMI, and iPhoneVIO
+projects. Those acknowledgements describe research context and compatibility;
+they do not imply endorsement, shared product ownership, or source derivation.
+
+Some protocol-v1 event and manifest identifiers retain historical `iphonevio`
+spellings because their semantics did not change. They are wire-format constants,
+not product branding, live Receiver compatibility, or a license claim.
+
+Project-owned source is distributed under the MIT License. Third-party software
+installed by users from the source dependency manifests remains under its own
+licenses; see `third_party/`. The published source snapshot contains project
+source and notices, not third-party dependency binaries.
